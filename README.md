@@ -1,13 +1,11 @@
 
 # Docker homework
-
 ## Introduction
-
-This is the documentation of the docker homework for VITMAC03 course at the Budapest University of Technology and Economics
-Written by: Fábián Füleki
+This is the documentation of the docker homework for VITMAC03 course at the Budapest University of Technology and Economics  
+Written by: Fábián Füleki  
 Neptun code: AEP0TG
 
-## Prerequisites (tested with)
+## Prerequisites (tested version)
 
 - docker (17.05.0)
 
