@@ -7,8 +7,7 @@ Neptun code: AEP0TG
 
 ## Prerequisites (tested version)
 
-- docker (17.05.0)
-
+- docker (17.05.0)  
 - docker-compose (1.23.2)
 
 ## Installing docker-compose and docker
