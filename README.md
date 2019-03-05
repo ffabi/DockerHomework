@@ -13,7 +13,9 @@ Neptun code: AEP0TG
 ## Installing docker-compose and docker
 
 `sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
-`sudo chmod +x /usr/local/bin/docker-compose`  
+
+`sudo chmod +x /usr/local/bin/docker-compose`
+
 `sudo apt update && sudo apt install -y --upgrade docker-engine`
 
 ## Purpose of each file
@@ -25,7 +27,6 @@ Describes the needed python packages to be installed
 ```
 flask==1.0.2
 redis==3.2.0
-
 ```
 
 
@@ -43,7 +44,6 @@ WORKDIR /code
 RUN pip3 install -r requirements.txt
 #Set start up command
 CMD ["python3", "app.py"]
-
 ```
 
 
@@ -56,7 +56,6 @@ Describes the needed steps for docker to build the database image
 FROM redis:alpine
 #Start the redis-server at startup
 CMD [ "redis-server" ]
-
 ```
 
 
@@ -92,7 +91,7 @@ def hello():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
-    
+	
 ```
     
 
