@@ -18,6 +18,10 @@ Neptun code: AEP0TG
 
 `sudo apt update && sudo apt install -y --upgrade docker-engine`
 
+## Clone repository
+
+`git clone https://github.com/ffabi/DockerHomework`
+
 ## Purpose of each file
 
 file [./app/requirements.txt](./app/requirements.txt)
