@@ -98,6 +98,7 @@ if __name__ == "__main__":
 
 file [docker-compose.yml](docker-compose.yml)
 
+Describes how the images should be built and the containers should be started
 
 ```yaml
 version: '3'
@@ -129,6 +130,6 @@ networks:
 
 ## Running
 
-To run the two containers, simple the following
+To run the two containers, simple run the following
 
 `docker-compose up`
