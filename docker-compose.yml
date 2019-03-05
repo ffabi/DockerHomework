@@ -1,0 +1,24 @@
+version: '3'
+services:
+  web:
+    #set the location of the Dockerfile
+    build: ./app/
+    ports:
+    #open port 5000 to the flask server
+     - "5000:5000"
+    volumes:
+     - .:/code
+     #configure to be the same as the redis-server network
+    networks:
+      - docker_network
+
+  redis:
+    build: ./db/
+    #configure to be the same as the flask-server network
+    networks:
+      - docker_network
+  
+#create common network for the containers
+networks:
+  docker_network:
+  
